@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="97f0e09a-203a-4cc5-8cbf-a4d2d54cd4f7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>cubeMemberEnrollmentStatus</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Status Losses</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="434e1659-6dd7-47e0-ba7e-0c709562a180">
+          <ID>Status Losses</ID>
+          <Name>Status Losses</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="66144eca-4711-40db-a2be-162c603d2dca">
+            <DataSourceViewID>dsvBIWarehousePayment</DataSourceViewID>
+            <TableID>statusLosses</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Status Gains</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="006f396d-3e46-4a50-9eff-85784366f046">
+          <ID>Status Gains</ID>
+          <Name>Status Gains</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4191ef6d-0969-4d99-8987-4fe9796bcd90">
+            <DataSourceViewID>dsvBIWarehousePayment</DataSourceViewID>
+            <TableID>statusGains</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Member Enrollment Status Count</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="132be821-de92-4aff-a823-1a402f4e220e">
+          <ID>Fact Member Enrollment Status Count</ID>
+          <Name>Fact Member Enrollment Status Count</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b1115dae-2c08-4337-8056-9aeb9a8fc04a">
+            <DataSourceViewID>dsvBIWarehousePayment</DataSourceViewID>
+            <TableID>dbo_FactMemberEnrollmentStatusCount</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

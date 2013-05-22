@@ -1,0 +1,190 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3b634f3c-ba74-4bdc-b263-ab59786936be" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Carrier</ID>
+  <Name>Dim Carrier</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3197dff8-805c-4d50-b84f-e05bc58723d4">
+    <DataSourceViewID>dsvBIWarehousePayment</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="95c0dbe6-faa7-4be9-9c61-88aa900a14ac">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="6c8eacdd-d134-4c8c-8c74-749012a404bb">
+      <ID>Carrier ID</ID>
+      <Name>Carrier ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5cc2230f-5354-4db6-8163-c71faee9ee1c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f510fda9-e312-436d-9ef8-aba8494e979e">
+            <TableID>dbo_DimCarrier</TableID>
+            <ColumnID>carrierID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3ae33a1a-e4a5-4aec-aed4-c76a2650aceb">
+          <AttributeID>Src Carrier ID</AttributeID>
+          <Name>Src Carrier ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b5186804-33fd-4aba-a70a-9736351ae5ef">
+          <AttributeID>Name</AttributeID>
+          <Name>Name_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="68c02ff0-2aad-4560-91dd-4921b55d87d1">
+          <AttributeID>Is Current</AttributeID>
+          <Name>Is Current</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3b1b5076-fa9b-44d7-ae51-7dcf6a3e9fc3">
+          <AttributeID>Effective Date</AttributeID>
+          <Name>Effective Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cffe9e26-a962-4b10-a9b9-0bb15133d95f">
+          <AttributeID>End Date</AttributeID>
+          <Name>End Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="598ff514-9b4e-4e3c-918e-e53909b32e03">
+          <AttributeID>Customer ID</AttributeID>
+          <Name>Customer ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="de0d1b48-5c81-47ff-821c-81f4c29a562b">
+      <ID>Src Carrier ID</ID>
+      <Name>Src Carrier ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="39b3ce28-051a-47f6-9e40-22d8cf54c9d1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ad7d7cb-8d29-402e-a98d-d9a344143f47">
+            <TableID>dbo_DimCarrier</TableID>
+            <ColumnID>srcCarrierID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="085083c0-d500-482d-a1f0-2d1540bc1776">
+      <ID>Name</ID>
+      <Name>Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9b437634-c8b1-4041-b8fa-51257b904f35">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82ad3789-6c14-408b-8b98-60f9bd0ca86b">
+            <TableID>dbo_DimCarrier</TableID>
+            <ColumnID>name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4824b2b0-5fad-488f-b299-9fb5183bf7c1">
+      <ID>Is Current</ID>
+      <Name>Is Current</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0ba0125d-0ed9-4f92-8c53-be6468ee5725">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3cfbffbd-b653-46ec-9709-0cf7659f915a">
+            <TableID>dbo_DimCarrier</TableID>
+            <ColumnID>isCurrent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="958db627-9424-4fc5-8bdc-6da696000909">
+      <ID>Effective Date</ID>
+      <Name>Effective Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0b1c90b-4d06-4af9-81df-648d2b920aed">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="778cbffe-6dbc-4a50-b919-df35ac56dcb0">
+            <TableID>dbo_DimCarrier</TableID>
+            <ColumnID>effectiveDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f6a1eb90-6775-40c5-98c3-c314321ef95f">
+      <ID>End Date</ID>
+      <Name>End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c48feaa3-cc8a-4d7c-8b4a-6ebf4d4005b3">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9385c749-10f7-41cc-9b2d-8c6c8d356438">
+            <TableID>dbo_DimCarrier</TableID>
+            <ColumnID>endDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="90518ae8-6b5e-4693-8285-46e7c0551a50">
+      <ID>Customer ID</ID>
+      <Name>Customer ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1b0053df-ccd8-418b-bf50-4fc83101ba59">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0186c41-f32f-4e21-9c08-32e164edbd79">
+            <TableID>dbo_DimCarrier</TableID>
+            <ColumnID>customerID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

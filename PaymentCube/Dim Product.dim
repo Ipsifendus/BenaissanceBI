@@ -1,0 +1,232 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b9ae7a23-4a16-43a8-af69-aa9884d462a9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Product</ID>
+  <Name>Dim Product</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1633" scrolltop="-3653" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8387" y="8467" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimProduct" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5080" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000d813000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimProduct" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1633</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3653</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6a7f881d-0259-461d-8305-8c7055b8620c">
+    <DataSourceViewID>dsvBIWarehousePayment</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="fe8501e5-1138-4e8c-a2b0-b1e07d2c34cd">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="a723c169-c236-4656-9f2c-16021e15c1fb">
+      <ID>Product ID</ID>
+      <Name>Product ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="24e96def-a4b1-4aea-a275-66ae31fcad0b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="12655826-d1b6-42a5-8619-a89e253e23ef">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>productID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="10fcc449-a445-4db5-95fd-1ab4acc3b922">
+          <AttributeID>Customer ID</AttributeID>
+          <Name>Customer ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c45b9f09-d0a9-4bbc-9547-8ae0b0cea2d2">
+          <AttributeID>Name</AttributeID>
+          <Name>Name_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6cc37483-e884-44a8-8061-f72a5555ce08">
+          <AttributeID>Carrier ID</AttributeID>
+          <Name>Carrier ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3adf3e8e-4ad5-4e0d-9c28-119fe325e1eb">
+          <AttributeID>Carrier Plan ID</AttributeID>
+          <Name>Carrier Plan ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="154db7d2-21f3-4342-b6bc-fa195f4d9f9c">
+          <AttributeID>Product Type Name</AttributeID>
+          <Name>Product Type Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8ab1c26a-3fbf-42eb-98ca-f242718237a4">
+          <AttributeID>Product Type Desc</AttributeID>
+          <Name>Product Type Desc</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fde1c63d-4ca2-42e4-bd2a-6533fb8d9f32">
+          <AttributeID>Src Plan ID</AttributeID>
+          <Name>Src Plan ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5ba60052-5acc-4f61-aafe-03f141ae2392">
+      <ID>Customer ID</ID>
+      <Name>Customer ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c709b04d-d3b8-47c1-bc82-1f8d17b24555">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39533fab-9288-4fd4-9cf6-7f922625ffca">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>customerID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2d9d0391-b878-40f7-9e9c-703c897ffa51">
+      <ID>Name</ID>
+      <Name>Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0af228b-660e-4e93-8d89-2e1139121e4b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e1821a9-5592-4676-a1a3-7b6a16baed60">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8ac0ac3-58c9-4666-a479-7f52f825094d">
+      <ID>Carrier ID</ID>
+      <Name>Carrier ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7884a048-34f0-4b34-901a-e7f2b5fa43f1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2553043-a83c-44d9-8a6a-f300e08ea817">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>carrierID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="12f5f362-9b40-42d9-af64-c024b7637d36">
+      <ID>Carrier Plan ID</ID>
+      <Name>Carrier Plan ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d23b44f7-e287-4a4b-908f-38e083db09eb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba1337a9-2a79-4bd5-b7c9-0dda9df74470">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>carrierPlanID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6753d2bd-8d49-45b9-9172-ab9dc814e9f3">
+      <ID>Product Type Name</ID>
+      <Name>Product Type Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5093e52e-70d3-4c36-ae6d-b940cd1f3e88">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31a095b9-b479-41a0-aa95-ff378271d027">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>productTypeName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fc0ca1e8-8526-4c02-a4b9-91e8b16a15b6">
+      <ID>Product Type Desc</ID>
+      <Name>Product Type Desc</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b1a99f3d-b30f-4f92-8daa-16c24db630ac">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="302de6f7-c507-42f1-8b7f-c7670dfd2c2a">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>productTypeDesc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e00f3a4c-d84f-4683-b165-0b3690f3e68a">
+      <ID>Src Plan ID</ID>
+      <Name>Src Plan ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b64bd9c3-7164-45b7-bdcd-09d31ddd437e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee7b9050-8302-4cc3-8494-020adff28b3e">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>srcPlanID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

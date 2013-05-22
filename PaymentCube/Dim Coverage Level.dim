@@ -1,0 +1,216 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c052d8e9-ee6e-43c1-b1bb-363113c14fdd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Coverage Level</ID>
+  <Name>Dim Coverage Level</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1990" scrolltop="-1799" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8387" y="8467" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="DimCoverageLevel" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3916" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004c0f000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCoverageLevel" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1990</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1799</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="bd28130a-e303-4fa4-b983-3611203b0422">
+    <DataSourceViewID>dsvBIWarehousePayment</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="f608d995-01cf-4002-8813-34ba7176693a">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="36ad59cd-d51b-455a-b1d0-7a3c1be8b526">
+      <ID>Coverage Level ID</ID>
+      <Name>Coverage Level ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52a08f1c-5e85-4850-a2d4-833a10d5a62c">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de40a20b-89a7-4dcf-91b9-86fa33693a7f">
+            <TableID>dbo_DimCoverageLevel</TableID>
+            <ColumnID>coverageLevelID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="79596e10-d035-44c8-80e5-72368eae1adc">
+          <AttributeID>Customer ID</AttributeID>
+          <Name>Customer ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b0249747-c02f-4a5e-a454-d7daf279ee86">
+          <AttributeID>Name</AttributeID>
+          <Name>Name_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="23885a1a-563a-4008-8a72-91683412610b">
+          <AttributeID>Alt Description For QB</AttributeID>
+          <Name>Alt Description For QB</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="caec80aa-904c-4a11-a4df-5112b1cc73c1">
+          <AttributeID>Alt Description For SPM</AttributeID>
+          <Name>Alt Description For SPM</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce156f3c-ae00-4e1b-b480-cc7e42455a23">
+          <AttributeID>Description</AttributeID>
+          <Name>Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="75b2bd9d-d05c-407b-848e-c48b538aab6e">
+          <AttributeID>Src Coverage Level ID</AttributeID>
+          <Name>Src Coverage Level ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e4f693cc-c924-4893-b976-83c725260c77">
+      <ID>Customer ID</ID>
+      <Name>Customer ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f8c1eb5b-a645-412c-8f00-af062f9ba27d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8e86de0-e0b3-48a8-811d-93bcf3a6fd5b">
+            <TableID>dbo_DimCoverageLevel</TableID>
+            <ColumnID>customerID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ff57837-6127-489a-852b-431d6794928e">
+      <ID>Name</ID>
+      <Name>Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5748f2be-e914-4274-bb25-691a0320fb02">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d41fe94-c2be-4174-bc30-579f0acb3370">
+            <TableID>dbo_DimCoverageLevel</TableID>
+            <ColumnID>name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8fb36128-219f-459a-a765-ad04cd1c4fa6">
+      <ID>Alt Description For QB</ID>
+      <Name>Alt Description For QB</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8db9e981-c79a-4da9-b7a7-d96105707d45">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0d254e4-fede-423a-94d8-ff4adbe4e2e3">
+            <TableID>dbo_DimCoverageLevel</TableID>
+            <ColumnID>altDescriptionForQB</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad0560c8-b918-407b-a5ff-072fed7cc147">
+      <ID>Alt Description For SPM</ID>
+      <Name>Alt Description For SPM</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6a9af001-dd21-445d-97e1-bd5d815fe2de">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c55e546d-bab8-40dc-ba61-4c772ad0d139">
+            <TableID>dbo_DimCoverageLevel</TableID>
+            <ColumnID>altDescriptionForSPM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d28d111-fb81-495b-b7c1-1bc49b80e5e2">
+      <ID>Description</ID>
+      <Name>Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="38d143c9-0d87-4ea4-8fe4-90554d4b4181">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1cfe94db-19db-4f44-aad3-51ff90ef9f6b">
+            <TableID>dbo_DimCoverageLevel</TableID>
+            <ColumnID>description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1f78c9a3-ed07-4fca-88c6-e9afddc54e63">
+      <ID>Src Coverage Level ID</ID>
+      <Name>Src Coverage Level ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5574e8a-ecc0-4566-be59-cb682ec1c941">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd260cca-e932-47cf-8412-7a52a796a124">
+            <TableID>dbo_DimCoverageLevel</TableID>
+            <ColumnID>srcCoverageLevelID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>
